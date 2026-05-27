@@ -7,10 +7,9 @@
 <title>OnWords</title>
 
 <style>
-
 body{
 font-family:Arial,sans-serif;
-max-width:900px;
+max-width:1100px;
 margin:auto;
 padding:30px;
 background:#f7f8fc;
@@ -21,14 +20,28 @@ text-decoration:none;
 color:#4285f4;
 }
 
-.screenshot{
-height:250px;
-background:#ddd;
-margin:20px 0;
-border-radius:10px;
+.feature{
+width:100%;
+max-width:900px;
+display:block;
+margin:25px auto;
+border-radius:16px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.gallery{
 display:flex;
-align-items:center;
+gap:20px;
+flex-wrap:wrap;
 justify-content:center;
+margin-top:25px;
+}
+
+.phone-shot{
+width:220px;
+max-width:45%;
+border-radius:22px;
+box-shadow:0 4px 12px rgba(0,0,0,.18);
 }
 
 .button{
@@ -38,17 +51,22 @@ background:#34a853;
 color:white;
 text-decoration:none;
 border-radius:8px;
+margin-top:25px;
 }
 
+@media(max-width:600px){
+.phone-shot{
+width:85%;
+max-width:85%;
+}
+}
 </style>
 
 </head>
 
 <body>
 
-<a class="back" href="index.html">
-← Back to Apps
-</a>
+<a class="back" href="index.html">← Back to Apps</a>
 
 <h1>OnWords</h1>
 
@@ -56,23 +74,22 @@ border-radius:8px;
 A fun tile-stacking word game where players build and stack words for points.
 </p>
 
+<img class="feature" src="assets/onwords-feature.png" alt="OnWords feature graphic">
+
 <h2>Screenshots</h2>
 
-<div class="screenshot">Screenshot 1</div>
-<div class="screenshot">Screenshot 2</div>
-<div class="screenshot">Screenshot 3</div>
+<div class="gallery">
+<img class="phone-shot" src="assets/onwords-screenshot1.png" alt="OnWords screenshot 1">
+<img class="phone-shot" src="assets/onwords-screenshot2.png" alt="OnWords screenshot 2">
+<img class="phone-shot" src="assets/onwords-screenshot3.png" alt="OnWords screenshot 3">
+<img class="phone-shot" src="assets/onwords-screenshot4.png" alt="OnWords screenshot 4">
+</div>
+
+<a class="button" href="#">Google Play (coming soon)</a>
 
 <br><br>
 
-<a class="button" href="#">
-Google Play (coming soon)
-</a>
-
-<br><br>
-
-<a href="onwords-privacy.html">
-Privacy Policy
-</a>
+<a href="onwords-privacy.html">Privacy Policy</a>
 
 </body>
 </html>
